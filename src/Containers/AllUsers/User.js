@@ -25,7 +25,7 @@ class User extends PureComponent {
     }
 
     handleChange = (event) => {
-        let filterData = this.state.data;
+        let filterData = { ...this.state.data };
         if(event.target.value === 'first') {
             filterData.data.sort((a, b) => {
                 let firstName1 = a.first_name.toUpperCase();
@@ -38,7 +38,6 @@ class User extends PureComponent {
                 }
                 return 0;
             });
-            
         }
         else if(event.target.value === 'last') {
             filterData.data.sort((a, b) => {
@@ -73,9 +72,9 @@ class User extends PureComponent {
                     ));
             displayDropDown = (
                 <select value = {this.state.value} onChange = {this.handleChange}>
-                    <option value ='none'>None</option>
-                    <option value ='first'>First Name</option>
-                    <option value ='last'>Last Name</option>
+                    <option value = 'none'>None</option>
+                    <option value = 'first'>First Name</option>
+                    <option value = 'last'>Last Name</option>
                 </select>
             );
         }
