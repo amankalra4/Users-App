@@ -1,0 +1,22 @@
+.users-border {
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+    margin: 8px 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.parent-div {
+    display: inline-block;
+}
+
+img {
+    margin: 20px 0;
+}
+
+select {
+    border-radius: 5px;
+    padding: 2px 15px;
+    float: right;
+}

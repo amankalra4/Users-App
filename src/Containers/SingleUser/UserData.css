@@ -1,0 +1,10 @@
+.userImg{
+    width: 300px;     
+    padding: 10px;
+}
+
+@media screen and (max-width: 305px) {
+    .userImg{
+        width: 200px;
+    }
+}
